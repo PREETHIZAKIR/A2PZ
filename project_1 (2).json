@@ -1,0 +1,254 @@
+{
+  "name": "project 1",
+  "nodes": [
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Act as Analyst , you are given with the data of the person he applied for the leave request use the below to match the name and email with the tool compare total leaves and availed leaves , then the return whether he is applicable for leave or not , to get the information about the candidate use the below the sheets tools\n\nthis is the name and email id of him :\n{{ $json.Name }} , {{ $json['Email id '] }} , {{ $json.Message }}\n\n",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2,
+      "position": [
+        680,
+        -120
+      ],
+      "id": "71b01018-4775-4f33-bbc9-f8bdae1d6d70",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-2.0-flash-001",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        700,
+        100
+      ],
+      "id": "30096c5e-6cdd-4706-9f0f-1a96e6c985a9",
+      "name": "Google Gemini Chat Model",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "unwF2Ce2DkeUCQv8",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "14in7QkP07r5AvZIJH9p6hcXRjqcU8ZwR3qhYivu8yC4",
+          "mode": "list",
+          "cachedResultName": "Email Content",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/14in7QkP07r5AvZIJH9p6hcXRjqcU8ZwR3qhYivu8yC4/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 727550984,
+          "mode": "list",
+          "cachedResultName": "Sheet2",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/14in7QkP07r5AvZIJH9p6hcXRjqcU8ZwR3qhYivu8yC4/edit#gid=727550984"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.6,
+      "position": [
+        460,
+        -160
+      ],
+      "id": "e03190a9-e4db-4082-831f-05877f159889",
+      "name": "Google Sheets",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "MAC1OV3pnmGWpdRG",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sendTo": "={{ $('Google Sheets').item.json['Email id '] }}",
+        "subject": "leave approval ",
+        "emailType": "text",
+        "message": "={{ $json.output }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        1060,
+        -140
+      ],
+      "id": "93049288-1e7c-41a6-8250-c7a672dfeb94",
+      "name": "Gmail2",
+      "webhookId": "aece1b4d-b6a9-4255-bf00-bfc5360211db",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "aLPvXPcgLmC4WN2a",
+          "name": "Gmail account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1HLSu8vTpi_InOAM9zo9imDHuhW-B_TePFCyafMvOEts",
+          "mode": "list",
+          "cachedResultName": "LEAVE/PROBLEM STATEMENT",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1HLSu8vTpi_InOAM9zo9imDHuhW-B_TePFCyafMvOEts/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1HLSu8vTpi_InOAM9zo9imDHuhW-B_TePFCyafMvOEts/edit#gid=0"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheetsTool",
+      "typeVersion": 4.6,
+      "position": [
+        900,
+        80
+      ],
+      "id": "bbbb3d94-9ec7-410d-b007-62bfc8260b0d",
+      "name": "Google Sheets2",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "Vd3OF0C3jwlZDPqJ",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        -160
+      ],
+      "id": "cbe72b44-4dac-4d8a-b987-448f0cf8bcf3",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1HLSu8vTpi_InOAM9zo9imDHuhW-B_TePFCyafMvOEts",
+          "mode": "list",
+          "cachedResultName": "LEAVE/PROBLEM STATEMENT",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1HLSu8vTpi_InOAM9zo9imDHuhW-B_TePFCyafMvOEts/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1HLSu8vTpi_InOAM9zo9imDHuhW-B_TePFCyafMvOEts/edit#gid=0"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.6,
+      "position": [
+        220,
+        -160
+      ],
+      "id": "ade5ea65-0729-46ba-9c38-bac6a339d3e3",
+      "name": "Google Sheets1",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "Vd3OF0C3jwlZDPqJ",
+          "name": "Google Sheets account 2"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Google Gemini Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Gmail2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets2": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets1": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "b261c043-e693-46bd-95a8-0742f97f52a5",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "d1d9b712019a366cd2102beb2a0bf31838b504e29ea1ce963a395804b4db4345"
+  },
+  "id": "xIOwaDsXS9orpbAa",
+  "tags": []
+}
