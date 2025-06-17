@@ -1,0 +1,789 @@
+{
+  "name": "Admission/16/06",
+  "nodes": [
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1imAHi1akI1ERtxNOIGJWProHGQ5fCMlQ7TCSMnnb8Uw",
+          "mode": "list",
+          "cachedResultName": "ADMISSION",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1imAHi1akI1ERtxNOIGJWProHGQ5fCMlQ7TCSMnnb8Uw/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1imAHi1akI1ERtxNOIGJWProHGQ5fCMlQ7TCSMnnb8Uw/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {
+            "Name": "Aakash"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Name",
+              "displayName": "Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Date of Birth",
+              "displayName": "Date of Birth",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Contact NO",
+              "displayName": "Contact NO",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Email id",
+              "displayName": "Email id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Achievements",
+              "displayName": "Achievements",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Personal & Leadership Skills",
+              "displayName": "Personal & Leadership Skills",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Class to which Admission Sought",
+              "displayName": "Class to which Admission Sought",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "linkedin Profile",
+              "displayName": "linkedin Profile",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "submittedAt",
+              "displayName": "submittedAt",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "formMode",
+              "displayName": "formMode",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Contact No",
+              "displayName": "Contact No",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Personal & Leadership skill",
+              "displayName": "Personal & Leadership skill",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Linkedin profile",
+              "displayName": "Linkedin profile",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.6,
+      "position": [
+        -8720,
+        -360
+      ],
+      "id": "7527ce28-ac61-493e-9a4f-20c05c9c38cf",
+      "name": "Google Sheets",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "MAC1OV3pnmGWpdRG",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1imAHi1akI1ERtxNOIGJWProHGQ5fCMlQ7TCSMnnb8Uw",
+          "mode": "list",
+          "cachedResultName": "ADMISSION",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1imAHi1akI1ERtxNOIGJWProHGQ5fCMlQ7TCSMnnb8Uw/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1imAHi1akI1ERtxNOIGJWProHGQ5fCMlQ7TCSMnnb8Uw/edit#gid=0"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.6,
+      "position": [
+        -8540,
+        -400
+      ],
+      "id": "c7816ac2-7e6d-4415-8898-ede6a98fa286",
+      "name": "Google Sheets1",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "Vd3OF0C3jwlZDPqJ",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "Congratulations – You’ve Been Selected!\nI’m pleased to inform you that based on your excellent academic performance, you’ve been selected for admission\nConfirm your acceptance by replying to this email within two working days.\nOnce confirmed, you’ll receive a welcome packet containing information on orientation, timetable, and campus resources.\n\nIf you have any questions, feel free to reach out to me through mail",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2,
+      "position": [
+        -8120,
+        -500
+      ],
+      "id": "e02e6685-170e-480b-8b3f-51323697b6c7",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-2.0-flash",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        -8220,
+        -340
+      ],
+      "id": "c06bf291-894d-4e86-a3b1-7f22e95f4f81",
+      "name": "Google Gemini Chat Model",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "unwF2Ce2DkeUCQv8",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sendTo": "=preethizakir2607@gmail.com",
+        "subject": "Send the message to the student",
+        "emailType": "text",
+        "message": "Congratulations! We are pleased to inform you that you have been selected for admission to grade 11. Please follow the next steps for enrollment. We look forward to welcoming youou are selected for grader 9. Kindly follow the admission procedure",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        -7740,
+        -440
+      ],
+      "id": "c5477e11-f85d-4c31-97d6-afc93f843822",
+      "name": "Gmail",
+      "webhookId": "5186e537-f843-4101-90bb-d58d11a75c2d",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "k9fY2MEqMNPo9nZj",
+          "name": "Gmail account 4"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "formTitle": "Talent Acquisition",
+        "formDescription": "Admission for grade 11 based on the skills, Academic Excellence",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Name",
+              "placeholder": "Write your full name as in Adhar card",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Date of Birth",
+              "fieldType": "date",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Contact No",
+              "fieldType": "number",
+              "placeholder": "Phone NO",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Email id",
+              "fieldType": "email",
+              "placeholder": "Correct user id",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Achievements",
+              "placeholder": "All achievements in grade 9 & 10",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Personal & Leadership skill",
+              "placeholder": "All your skills",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Class to which Admission Sought",
+              "fieldType": "number",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Linkedin profile",
+              "placeholder": "Active prolie link",
+              "requiredField": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.2,
+      "position": [
+        -8880,
+        -340
+      ],
+      "id": "25f9b7b1-e65c-4de4-96c1-a054393cafc5",
+      "name": "On form submission",
+      "webhookId": "62a7a4be-3bef-40f6-a618-37038dec5223"
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\nconst linkedInProfiles = items.map((item) => item?.json[\"Linkedin profile\"]);\nreturn { linkedInProfiles };\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -8340,
+        -440
+      ],
+      "id": "5ec0aa91-7608-4a52-ade4-2f95d50c7b78",
+      "name": "Code"
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "c7e9bee6-feb1-44ed-a03c-fd6b2eb0de8b",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -8880,
+        -120
+      ],
+      "id": "ea1c97fa-0e2e-487c-b9c5-b41c711448c9",
+      "name": "Webhook",
+      "webhookId": "c7e9bee6-feb1-44ed-a03c-fd6b2eb0de8b"
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1imAHi1akI1ERtxNOIGJWProHGQ5fCMlQ7TCSMnnb8Uw",
+          "mode": "list",
+          "cachedResultName": "ADMISSION",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1imAHi1akI1ERtxNOIGJWProHGQ5fCMlQ7TCSMnnb8Uw/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1imAHi1akI1ERtxNOIGJWProHGQ5fCMlQ7TCSMnnb8Uw/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {
+            "Name": "Aakash"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Name",
+              "displayName": "Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Date of Birth",
+              "displayName": "Date of Birth",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Contact NO",
+              "displayName": "Contact NO",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Email id",
+              "displayName": "Email id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Achievements",
+              "displayName": "Achievements",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Personal & Leadership Skills",
+              "displayName": "Personal & Leadership Skills",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Class to which Admission Sought",
+              "displayName": "Class to which Admission Sought",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "linkedin Profile",
+              "displayName": "linkedin Profile",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "submittedAt",
+              "displayName": "submittedAt",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "formMode",
+              "displayName": "formMode",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Contact No",
+              "displayName": "Contact No",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Personal & Leadership skill",
+              "displayName": "Personal & Leadership skill",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Linkedin profile",
+              "displayName": "Linkedin profile",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.6,
+      "position": [
+        -8700,
+        -40
+      ],
+      "id": "199323d5-2e52-4b39-9be1-8c75d15f5d37",
+      "name": "Google Sheets2",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "MAC1OV3pnmGWpdRG",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1imAHi1akI1ERtxNOIGJWProHGQ5fCMlQ7TCSMnnb8Uw",
+          "mode": "list",
+          "cachedResultName": "ADMISSION",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1imAHi1akI1ERtxNOIGJWProHGQ5fCMlQ7TCSMnnb8Uw/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1imAHi1akI1ERtxNOIGJWProHGQ5fCMlQ7TCSMnnb8Uw/edit#gid=0"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.6,
+      "position": [
+        -8520,
+        20
+      ],
+      "id": "9d8a6f93-6313-43fd-b40d-e7e90ffb6920",
+      "name": "Google Sheets3",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "Vd3OF0C3jwlZDPqJ",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "Congratulations – You’ve Been Selected!\nI’m pleased to inform you that based on your excellent academic performance, you’ve been selected for admission\nConfirm your acceptance by replying to this email within two working days.\nOnce confirmed, you’ll receive a welcome packet containing information on orientation, timetable, and campus resources.\n\nIf you have any questions, feel free to reach out to me through mail",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2,
+      "position": [
+        -8140,
+        -20
+      ],
+      "id": "5a54f348-155b-46ba-8cea-d8ce008702ae",
+      "name": "AI Agent1"
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-2.0-flash",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        -8200,
+        180
+      ],
+      "id": "7d44fdcd-e24a-44fb-944a-058bcfe77f59",
+      "name": "Google Gemini Chat Model1",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "unwF2Ce2DkeUCQv8",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sendTo": "=preethizakir2607@gmail.com",
+        "subject": "Send the message to the student",
+        "emailType": "text",
+        "message": "Congratulations! We are pleased to inform you that you have been selected for admission to grade 11. Please follow the next steps for enrollment. We look forward to welcoming youou are selected for grader 9. Kindly follow the admission procedure",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        -7740,
+        -120
+      ],
+      "id": "be121cc5-0218-443d-9bda-a926799ca7cc",
+      "name": "Gmail1",
+      "webhookId": "5186e537-f843-4101-90bb-d58d11a75c2d",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "k9fY2MEqMNPo9nZj",
+          "name": "Gmail account 4"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\nconst linkedInProfiles = items.map((item) => item?.json[\"Linkedin profile\"]);\nreturn { linkedInProfiles };\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -8360,
+        60
+      ],
+      "id": "6433ab11-8d6d-4b9b-b99b-92e8c197f583",
+      "name": "Code1"
+    },
+    {
+      "parameters": {
+        "content": "PROBLEM STATEMENT:\nIdentifying and converting talented students across Tamil Nadu requires continuous monitoring and follow-ups, which are time-intensive.\nAGENTIC AI + N8N SOLUTION\nTracks online profiles (LinkedIn, Olympiads, Google Forms) via n8n.\nQualifies leads, sends personalized follow-ups, and notifies the admission team.",
+        "width": 480
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -7600,
+        -300
+      ],
+      "id": "0e7020b4-eeb8-4fdf-b007-fce87cdc7d1b",
+      "name": "Sticky Note"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Google Sheets": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets1": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Gmail",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "On form submission": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets2": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets3": {
+      "main": [
+        [
+          {
+            "node": "Code1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent1": {
+      "main": [
+        [
+          {
+            "node": "Gmail1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent1",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code1": {
+      "main": [
+        [
+          {
+            "node": "AI Agent1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "00c0e160-66be-4534-82b2-3da566ca9f22",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "d1d9b712019a366cd2102beb2a0bf31838b504e29ea1ce963a395804b4db4345"
+  },
+  "id": "awefzB0NN2RY0XRC",
+  "tags": []
+}
